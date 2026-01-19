@@ -5,6 +5,10 @@ class ProjectView {
 
         this.themeBtn = document.querySelector('.nav-actions button');
         this.themeIcon = this.themeBtn.querySelector('.icon');
+
+        this.backToTopBtn = document.querySelector('.back-to-top');
+        this.initBackToTop();
+
         this.body = document.body;
     }
 
@@ -49,6 +53,18 @@ class ProjectView {
     bindToggleTheme(handler) {
         this.themeBtn.addEventListener('click', () => {
             handler();
+        });
+    }
+
+    initBackToTop() {
+        if (!this.backToTopBtn) return;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                this.backToTopBtn.classList.add('visible');
+            } else {
+                this.backToTopBtn.classList.remove('visible');
+            }
         });
     }
 }
