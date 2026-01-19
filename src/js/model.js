@@ -1,0 +1,59 @@
+class ProjectModel {
+    constructor() {
+        this.projects = [
+            {
+                id: 1,
+                title: "智慧麵包辨識",
+                category: "AI",
+                tags: ["Python", "Machine Learning", "OpenCV"],
+                desc: "解決結帳效率問題的影像辨識模型，負責資料清洗與訓練。"
+            },
+            {
+                id: 2,
+                title: "TimeMarker",
+                category: "App",
+                tags: ["Productivity", "UI/UX"],
+                desc: "結合番茄鐘與任務管理的網站。"
+            },
+            {
+                id: 3,
+                title: "Unity 2D 動作遊戲",
+                category: "Game",
+                tags: ["Unity", "C#", "Design Patterns"],
+                desc: "運用狀態模式重構角色邏輯，包含自製物理碰撞與敵人 AI。"
+            },
+            {
+                id: 4,
+                title: "給我讓開! Get Out My Way!!",
+                category: "Game",
+                tags: ["Unity", "C#", "Design Patterns"],
+                desc: "一時興起的專案，想到甚麼做什麼。"
+            },
+            {
+                id: 5,
+                title: "機運輪迴 Gambler’s Samsara",
+                category: "Game",
+                tags: ["Unity", "C#", "Design Patterns"],
+                desc: "結合機率與策略的單人賭博遊戲，融合「擲骰」與「幸運輪盤」為核心玩法。"
+            },
+            {
+                id: 6,
+                title: "閒置數據 Idle Data",
+                category: "Game",
+                tags: ["Unity", "C#", "Design Patterns"],
+                desc: "增量掛機遊戲（Incremental Idle Game） 資源管理模擬。"
+            }
+        ];
+    }
+
+    // 提供給 Controller 呼叫的方法
+    getAllProjects() {
+        return this.projects;
+    }
+
+    // 模擬篩選功能 (例如只看 Game 類別)
+    getProjectsByCategory(category) {
+        if (category === 'All') return this.projects;
+        return this.projects.filter(p => p.category === category);
+    }
+}

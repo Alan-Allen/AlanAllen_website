@@ -1,0 +1,1 @@
+const app = new ProjectController(new ProjectModel(), new ProjectView());
