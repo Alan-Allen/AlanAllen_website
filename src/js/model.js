@@ -7,18 +7,26 @@ class ProjectModel {
                 category: "AI",
                 tags: ["Python", "Machine Learning", "OpenCV"],
                 desc: "解決結帳效率問題的影像辨識模型，負責資料清洗與訓練。",
-                href: "https://github.com/Alan-Allen/Bread_Classifier.git"
+                href: "https://github.com/Alan-Allen"
             },
             {
                 id: 2,
                 title: "TimeMarker",
                 category: "App",
-                tags: ["Productivity", "UI/UX"],
+                tags: ["Web", "Productivity", "UI/UX"],
                 desc: "結合番茄鐘與任務管理的網站。",
                 href: "#"
             },
             {
                 id: 3,
+                title: "個人網站",
+                category: "App",
+                tags: ["Web", "My self", "UI/UX"],
+                desc: "個人介紹網站",
+                href: "#"
+            },
+            {
+                id: 4,
                 title: "Unity 2D 動作遊戲",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
@@ -26,7 +34,7 @@ class ProjectModel {
                 href: "#"
             },
             {
-                id: 4,
+                id: 5,
                 title: "給我讓開! Get Out My Way!!",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
@@ -34,7 +42,7 @@ class ProjectModel {
                 href: "#"
             },
             {
-                id: 5,
+                id: 6,
                 title: "機運輪迴 Gambler’s Samsara",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
@@ -42,7 +50,7 @@ class ProjectModel {
                 href: "#"
             },
             {
-                id: 6,
+                id: 7,
                 title: "閒置數據 Idle Data",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
@@ -52,12 +60,10 @@ class ProjectModel {
         ];
     }
 
-    // 提供給 Controller 呼叫的方法
     getAllProjects() {
         return this.projects;
     }
 
-    // 模擬篩選功能 (例如只看 Game 類別)
     getProjectsByCategory(category) {
         if (category === 'All') return this.projects;
         return this.projects.filter(p => p.category === category);

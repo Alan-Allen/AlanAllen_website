@@ -29,7 +29,7 @@ class ProjectView {
                             ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                         </div>
                         <p>${project.desc}</p>
-                        <a href="#" class="link">查看內容 &rarr;</a>
+                        <a href="${project.href}}" class="link">查看內容 &rarr;</a>
                     </div>
                 </div>
             `;
