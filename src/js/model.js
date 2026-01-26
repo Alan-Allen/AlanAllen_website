@@ -6,42 +6,48 @@ class ProjectModel {
                 title: "智慧麵包辨識",
                 category: "AI",
                 tags: ["Python", "Machine Learning", "OpenCV"],
-                desc: "解決結帳效率問題的影像辨識模型，負責資料清洗與訓練。"
+                desc: "解決結帳效率問題的影像辨識模型，負責資料清洗與訓練。",
+                href: "https://github.com/Alan-Allen/Bread_Classifier.git"
             },
             {
                 id: 2,
                 title: "TimeMarker",
                 category: "App",
                 tags: ["Productivity", "UI/UX"],
-                desc: "結合番茄鐘與任務管理的網站。"
+                desc: "結合番茄鐘與任務管理的網站。",
+                href: "#"
             },
             {
                 id: 3,
                 title: "Unity 2D 動作遊戲",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
-                desc: "運用狀態模式重構角色邏輯，包含自製物理碰撞與敵人 AI。"
+                desc: "運用狀態模式重構角色邏輯，包含自製物理碰撞與敵人 AI。",
+                href: "#"
             },
             {
                 id: 4,
                 title: "給我讓開! Get Out My Way!!",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
-                desc: "一時興起的專案，想到甚麼做什麼。"
+                desc: "一時興起的專案，想到甚麼做什麼。",
+                href: "#"
             },
             {
                 id: 5,
                 title: "機運輪迴 Gambler’s Samsara",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
-                desc: "結合機率與策略的單人賭博遊戲，融合「擲骰」與「幸運輪盤」為核心玩法。"
+                desc: "結合機率與策略的單人賭博遊戲，融合「擲骰」與「幸運輪盤」為核心玩法。",
+                href: "#"
             },
             {
                 id: 6,
                 title: "閒置數據 Idle Data",
                 category: "Game",
                 tags: ["Unity", "C#", "Design Patterns"],
-                desc: "增量掛機遊戲（Incremental Idle Game） 資源管理模擬。"
+                desc: "增量掛機遊戲（Incremental Idle Game） 資源管理模擬。",
+                href: "#"
             }
         ];
     }
